@@ -6,12 +6,12 @@
             "command": "/usr/bin/clang++",
             "args": [
                 "-Wall",
-				"-Wextra",
-				"-Wpedantic",
-				"-std=c++17",
+                "-Wextra",
+                "-Wpedantic",
+                "-std=c++17",
                 "-I${workspaceFolder}/include",
-				"${workspaceFolder}/src/*.cpp",
-				"-o",
+                "${workspaceFolder}/src/*.cpp",
+                "-o",
                 "${workspaceFolder}/build/example"
             ],
             "options": {
