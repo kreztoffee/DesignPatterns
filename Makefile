@@ -4,7 +4,7 @@ SRCDIR = ./src
 
 SRCS = $(shell find . -name '*.cpp')
 
-CXXFLAGS = -Wall -Wextra -Wpedantic -std=c++17 -I$(INCDIR)
+CXXFLAGS = -Wall -Wextra -Wpedantic -std=c++17 -I$(INCDIR) -I$(INCDIR)/Builder -I$(INCDIR)/Singleton -I$(INCDIR)/AbstractFactory -I$(INCDIR)/Products -I$(INCDIR)/Parts
 
 CXX = g++
 

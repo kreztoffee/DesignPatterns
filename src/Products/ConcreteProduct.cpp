@@ -25,7 +25,11 @@ void ConcreteProduct::setNumberOfThings(int numberOfThings)
 
 void ConcreteProduct::printState()
 {
+    std::cout << "I am a Concrete Product\n";
     std::cout << "I have " << numberOfThings << " thing(s)\n";
-    std::cout << "I have a part named ";
-    part->printName();
+    if (part)
+    {
+        std::cout << "I have a part named ";
+        part->printName();
+    }
 }

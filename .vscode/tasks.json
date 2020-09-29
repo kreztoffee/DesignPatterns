@@ -3,16 +3,8 @@
         {
             "type": "shell",
             "label": "C/C++: clang++ - build",
-            "command": "/usr/bin/clang++",
+            "command": "/usr/bin/make",
             "args": [
-                "-Wall",
-                "-Wextra",
-                "-Wpedantic",
-                "-std=c++17",
-                "-I${workspaceFolder}/include",
-                "${workspaceFolder}/src/*.cpp",
-                "-o",
-                "${workspaceFolder}/build/example"
             ],
             "options": {
                 "cwd": "${workspaceFolder}"
